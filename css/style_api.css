@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: #e12835;
+  background-image: radial-gradient(#e12835 20%, #be2633 50%, rgba(0, 0, 0, 0.5) 100%);
+  background-size: 120%;
+  background-position: center;
+  font-family: "Barlow Condensed", sans-serif;
+  animation: tighten-vinette ease-out 1800ms forwards;
+}
+#title img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+h1 {
+  text-align: center;
+  color:white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+#title {  
+  margin: 10px auto;
+}
+
+.jumbotron{
+    
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control{
+      padding: 6px 20px;
+}
+.input-wrapper{
+  position: relative;
+}
+
+.btn-danger{
+  background-color: #FF0000;
+}
+ #result {
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
+
+.ui-menu .ui-menu-item {
+    padding: 6px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+ /* .ui-menu .ui-menu-item:focus {
+    background-color: black;
+  }*/
