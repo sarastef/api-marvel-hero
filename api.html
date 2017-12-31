@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style_api.css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,800" rel="stylesheet">
+
+     
+    </head>
+<body>
+        
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <div id="title">
+        <img src="img/marvel_omega.png" >
+      </div>
+      <br>
+      <form id="mCharForm" action="/" method="GET">
+        <div class="input-group ui" align="center">
+          <input type="text"  name="search" class="form-control" placeholder="Saisir le nom  de votre hero" id="search_hero" >
+
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-danger" id="buscar" >
+            <span class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+        
+        <ul class="list-group" id="result"></ul> 
+        <br />
+      </form>
+
+    </div>
+  </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center" id="hero_name">
+            <h1></h1>
+        </div>
+    </div>
+
+<!--Information-->
+
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group" id="quickFacts">
+                <li class="list-group-item" id='comics'> Comics: <a href="#" class="pull-right" data-toggle="modal" data-target="#comicsList"></a></li>
+                <li class="list-group-item" id='comicStories'>Stories: <a href="#" class="pull-right" data-toggle="modal" data-target="#storiesList"></a></li>
+                <li class="list-group-item" id='comicEvents'>Events: <a href="#" class="pull-right" data-toggle="modal" data-target="#eventsList"></a></li>
+            </ul>
+        </div>
+
+
+<!-- Comics -->
+    <div class="modal fade" id="comicsList" tabindex="-1" role="dialog" aria-labelledby="comicsList">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Comics: </h4>
+          </div>
+          <div class="modal-body" id="listComics">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!--  Stories -->
+
+    <div class="modal fade" id="storiesList" tabindex="-1" role="dialog" aria-labelledby="storiesList">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Stories: </h4>
+          </div>
+          <div class="modal-body" id="listStories">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+<!--  Events -->
+
+    <div class="modal fade" id="eventsList" tabindex="-1" role="dialog" aria-labelledby="eventsList">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Events: </h4>
+          </div>
+          <div class="modal-body" id="listEvents">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div class="col-md-8">
+        <div class="thumbnail" id="comicImg"></div>
+    </div>
+    
+  </div>
+
+  <!-- Information-->
+
+</div>
+    
+</body>
+</html>
